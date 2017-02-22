@@ -1,0 +1,30 @@
+\documentclass{beamer}
+
+\begin{document}
+
+	\begin{frame}
+	\frametitle{Fourier Analysis}
+		\begin{itemize}
+			\item Fourier analysis in a nutshell: How do we decompose a general function into a sum of simple trigonometric functions (like sine and cosine)?
+			\item More technically, we want to express a function of time (signal space) in terms of the amplitude of the frequencies that make it up (frequency space).
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}
+	\frametitle{How can we apply Fourier Analysis to an image?}
+		\begin{itemize}
+			\item While an image is not a function, it is a sampling of signals (pixels). Therefore, we can take the Discrete Fourier Transform (DFT) of an image.
+			\item In return, we get an image of the same size, but with each pixel replaced by the amplitude of a particular frequency.
+			\begin{figure}
+				\includegraphics[scale = 0.5]{/Home/sarah/Downloads/cosines1}
+			\end{figure}
+			\begin{figure}
+				\includegraphics[scale = 0.5]{/Home/sarah/Downloads/brks_blks}
+			\end{figure}
+		\end{itemize}
+	\end{frame}
+
+\end{document}
+	
+			
+	

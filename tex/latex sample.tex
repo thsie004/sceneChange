@@ -1,0 +1,76 @@
+\documentclass{beamer}
+\usepackage{amsmath,amssymb,amsthm,amsfonts,commath,tikz}
+\usetheme{Warsaw}
+\usecolortheme{rose}
+\usetikzlibrary{arrows,positioning,fit,matrix,shapes.geometric,external}
+
+
+
+\begin{document}
+
+
+	% SLIDE 1
+	% Title
+	\section{UCR Undergraduate Research Project} 
+	\title{Distribution of the Gaussian primes}
+	\author{{\it Melina Fuentes} and {\it Michel Manrique}\hspace{8ex} \\
+	\footnotesize Advisors: {\it John Dusel} and {\it Jason Erbele} }
+	\institute{University of California, Riverside}
+	\maketitle
+
+	\setbeamertemplate{itemize items}[default]
+	\setbeamertemplate{enumerate items}[default]
+
+	% SLIDE 2
+	% Modular Arithmetic
+	\begin{frame}
+		\frametitle{Modular Arithmetic}
+		\pause	
+		\begin{itemize}
+			\item 	Language of congruences developed by Karl Friedrich Gauss (1777-1855) 
+				at beginning of 19\textsuperscript{th} century.
+			\item   First notation that made working with divisibility relationships easier, and less awkward, 
+				which in turn, helped accelerate number theory.
+		\end{itemize}
+		\pause
+		\begin{definition}
+			Let m be a positive integer. If a and b are integers, we say that 
+			a is \textit{congurent to b modulo m} if $m \mid (a-b)$.
+			\\ \hspace{4ex} That is, $a \equiv b \pmod m$  if $m \mid (a-b)$.
+			\\ \hspace{4ex} However, $a \not\equiv b \pmod m$ if  $m \nmid (a-b)$. [R]
+		\end{definition}
+		\pause
+		\begin{example}
+			$11 \equiv 3 \pmod 4$ since $4 \mid (11-3) = 8$.
+			\\ $3 \equiv -6 \pmod 9$ since $9 \mid (3-(-6))=9$.
+		\end{example}
+	\end{frame}
+
+	% SLIDE 3
+	% Acknowledgements
+	\begin{frame}
+		\frametitle{Acknowledgements}
+		\pause
+		\hspace{4ex} 
+		We would like to thank John Dusel, Jason Erbele, Dr. Kevin Costello, Dr. Vyjayanthi Chari, the UCR math club, 
+		and the UCR Mathematics department for allowing us the opportunitiy to be apart of this undergraduate mathematics
+		research project. We are sincerely grateful for the chance to learn and discover new topics that are not standard to the 
+		undergraduate mathematics curriculum. Thank you all!
+	\end{frame}
+
+	% SLIDE 4
+	% Bibliography
+	\begin{frame}
+		\frametitle{Bibliography}
+		 \begin{thebibliography}{}
+			\setbeamertemplate{bibliography item}[text]
+			\bibitem{EW} Graham Everest and Thomas Ward, {\em An Introduction to Number Theory},  Springer-Verlag,
+	 		Berlin, 2005.
+			\bibitem{GG}  Andrew Granville and Greg Martin, {\em Prime Number Races}, The Mathematical Association of 
+			America, Monthly 113, January 2006.
+			\bibitem{R}     Kenneth H. Rosen, {\em Elementary Number Theory and Its Applications}, Pearson, 2005.
+		\end{thebibliography}
+	\end{frame}
+
+
+\end{document}
